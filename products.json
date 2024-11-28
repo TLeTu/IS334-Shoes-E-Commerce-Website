@@ -1,0 +1,72 @@
+[
+  {
+    "id": "101",
+    "name": "Running Shoes",
+    "brand": "Nike",
+    "price": "4999",
+    "discount": "50%",
+    "description": "High-quality running shoes for maximum comfort and performance.",
+    "preview": "/img/adidas1.jpg",
+    "photos": [
+      "https://example.com/images/product1_1.jpg",
+      "https://example.com/images/product1_2.jpg",
+      "https://example.com/images/product1_3.jpg"
+    ]
+  },
+  {
+    "id": "102",
+    "name": "Basketball Shoes",
+    "brand": "Adidas",
+    "price": "5999",
+    "discount": "50%",
+    "description": "Durable basketball shoes designed for court dominance.",
+    "preview": "https://example.com/images/product2.jpg",
+    "photos": [
+      "https://example.com/images/product2_1.jpg",
+      "https://example.com/images/product2_2.jpg",
+      "https://example.com/images/product2_3.jpg"
+    ]
+  },
+  {
+    "id": "103",
+    "name": "Running Shoes1",
+    "brand": "Nike",
+    "price": "4999",
+    "discount": "0%",
+    "description": "High-quality running shoes for maximum comfort and performance.",
+    "preview": "/img/adidas1.jpg",
+    "photos": [
+      "https://example.com/images/product1_1.jpg",
+      "https://example.com/images/product1_2.jpg",
+      "https://example.com/images/product1_3.jpg"
+    ]
+  },
+  {
+    "id": "104",
+    "name": "Running Shoes2",
+    "brand": "Nike",
+    "price": "4999",
+    "discount": "0%",
+    "description": "High-quality running shoes for maximum comfort and performance.",
+    "preview": "https://example.com/images/product1.jpg",
+    "photos": [
+      "https://example.com/images/product1_1.jpg",
+      "https://example.com/images/product1_2.jpg",
+      "https://example.com/images/product1_3.jpg"
+    ]
+  },
+  {
+    "id": "105",
+    "name": "Running Shoes3",
+    "brand": "Nike",
+    "price": "4999",
+    "discount": "50%",
+    "description": "High-quality running shoes for maximum comfort and performance.",
+    "preview": "https://example.com/images/product1.jpg",
+    "photos": [
+      "https://example.com/images/product1_1.jpg",
+      "https://example.com/images/product1_2.jpg",
+      "https://example.com/images/product1_3.jpg"
+    ]
+  }
+]

@@ -2,9 +2,6 @@ console.clear();
 
 let contentTitle;
 let mainContainer = document.getElementById("containerClothing");
-
-console.log(document.cookie);
-
 document.getElementById('searchButton').addEventListener('click', function () {
   const query = document.getElementById('input').value.trim(); // Get the input value
   if (query) { // Check if the input is not empty
@@ -13,7 +10,6 @@ document.getElementById('searchButton').addEventListener('click', function () {
       alert('Please enter a search query!'); // Optional: Prompt user to enter something
   }
 });
-
 document.getElementById('input').addEventListener('keydown', function(event) {
   if (event.key === 'Enter') {
       const query = event.target.value.trim(); // Ensure no extra spaces
@@ -38,6 +34,8 @@ document.getElementById('adidasCategory').addEventListener('click', function () 
       alert('Please enter a search query!'); // Optional: Prompt user to enter something
   }
 });
+console.log(document.cookie);
+
 function dynamicClothingSection(ob) {
   let boxDiv = document.createElement("div");
   boxDiv.id = "box";
@@ -102,10 +100,19 @@ fetch('products.json')
       document.getElementById("badge").innerHTML = counter;
     }
 
-    // Render all products
-    for (let i = 0; i < contentTitle.length; i++) {
-      console.log(contentTitle[i]);
-      mainContainer.appendChild(dynamicClothingSection(contentTitle[i]));
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('query');
+
+    // Filter products based on search query
+    const filteredProducts = contentTitle.filter(product => 
+      product.name.toLowerCase().includes(query.toLowerCase()) || 
+      product.brand.toLowerCase().includes(query.toLowerCase())
+    );
+
+    // Render filtered products
+    for (let i = 0; i < filteredProducts.length; i++) {
+      console.log(filteredProducts[i]);
+      mainContainer.appendChild(dynamicClothingSection(filteredProducts[i]));
     }
   })
   .catch(error => {

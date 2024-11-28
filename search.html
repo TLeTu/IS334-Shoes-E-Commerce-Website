@@ -31,10 +31,11 @@
             document.getElementById(1).innerHTML = req.responseText;
         }
     </script>
-    <!-- SLIDER -->
+
+    <!-- CONTENT SECTION -->
     <div id="2"></div>
     <script>
-        load("slider.html");
+        load("contentSearch.html");
         function load(url)
         {
             req = new XMLHttpRequest();
@@ -44,10 +45,10 @@
         }
     </script>
 
-    <!-- CONTENT SECTION -->
+    <!-- FOOTER -->
     <div id="3"></div>
     <script>
-        load("content.html");
+        load("footer.html");
         function load(url)
         {
             req = new XMLHttpRequest();
@@ -57,39 +58,9 @@
         }
     </script>
 
-    <!-- FOOTER -->
-    <div id="4"></div>
-    <script>
-        load("footer.html");
-        function load(url)
-        {
-            req = new XMLHttpRequest();
-            req.open("GET", url, false);
-            req.send(null);
-            document.getElementById(4).innerHTML = req.responseText;
-        }
-    </script>
-
 </body>
 
-<!-- slider JS START -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<script>
-    $(document).ready(function()
-    {
-    $('#containerSlider').slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        });
-    });
-</script>
-<!-- slider JS ENDS -->
-
 <!-- content JS -->
-<script src="content.js"></script>
+<script src="contentSearch.js"></script>
 
 </html>
