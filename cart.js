@@ -122,16 +122,16 @@ function amountUpdate(amount) {
     nameInput.style.height = '30px'; // Increase height
     totalDiv.appendChild(nameInput);
 
-    let addressInput = document.createElement('input');
-    addressInput.type = 'text';
-    addressInput.placeholder = 'Address';
-    addressInput.id = 'addressInput';
-    addressInput.style.display = 'block'; // Ensure input is on a new line
-    addressInput.style.marginTop = '10px'; // Add some spacing
-    addressInput.style.width = '100%'; // Make input cover the width of the box
-    addressInput.style.borderRadius = '5px'; // Rounded corners
-    addressInput.style.height = '30px'; // Increase height
-    totalDiv.appendChild(addressInput);
+    // let addressInput = document.createElement('input');
+    // addressInput.type = 'text';
+    // addressInput.placeholder = 'Address';
+    // addressInput.id = 'addressInput';
+    // addressInput.style.display = 'block'; // Ensure input is on a new line
+    // addressInput.style.marginTop = '10px'; // Add some spacing
+    // addressInput.style.width = '100%'; // Make input cover the width of the box
+    // addressInput.style.borderRadius = '5px'; // Rounded corners
+    // addressInput.style.height = '30px'; // Increase height
+    // totalDiv.appendChild(addressInput);
 
     let emailInput = document.createElement('input');
     emailInput.type = 'email';
@@ -159,10 +159,55 @@ let buttonLink = document.createElement('a');
 // buttonLink.href = '/orderPlaced.html?';
 buttonTag.appendChild(buttonLink);
 
+//prevent the default action of the button
+buttonLink.addEventListener('click', function (event) {
+    event.preventDefault();
+});
+
 let buttonText = document.createTextNode('Place Order');
 buttonTag.onclick = function () {
     console.log("clicked");
+
+    let name = document.getElementById('nameInput').value;
+    let email = document.getElementById('emailInput').value;
+
+    //validate the name and email
+    if (name === '' || email === '') {
+        alert('Please fill the required fields');
+        return;
+    }
+
+    //validate the email
+    let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!email.match(emailPattern)) {
+        alert('Please enter a valid email address');
+        return;
+    }
+
+    let order = {
+        name: name,
+        email: email,
+        totalAmount: document.getElementById('total').children[1].textContent,
+    };
+
+    localStorage.setItem('order', JSON.stringify(order));
+
+    //url to direct to the orderPlaced.html
+    //get root url 
+    let directUrl = window.location.href.split('/').slice(0, 3).join('/');
+    //remove http: from the url
+    directUrl = directUrl.replace('http://', '');
+    console.log(directUrl);
+
+    //direct to http://localhost/zalopay and send the order details and directUrl with url
+    window.location.href = `http://localhost/zalopay/index.php?&url=${directUrl}`;
+
+
+
+
+
 };
+
 
 // Fetch product data from products.json
 fetch('products.json')

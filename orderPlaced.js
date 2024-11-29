@@ -56,3 +56,54 @@ document.getElementById('adidasCategory').addEventListener('click', function () 
 //     }
 // }
 // httpRequest.send(null);
+
+let order = JSON.parse(localStorage.getItem('order'));
+
+sendEmail();
+
+function sendEmail(){
+    const email = order.email;
+      const customerName = order.name;
+      const orderId = Math.random().toString(36).substr(2, 8);
+      const totalAmount = order.totalAmount;
+      const paymentStatus = "Đã thanh toán";
+
+      // Dữ liệu gửi email
+      const serviceID = "service_5imyqcx"; // Thay bằng service_id của bạn
+      const templateID = "template_y6soe9p"; // Thay bằng template_id của bạn
+      const publicKey = "Pbh6VXMHJxmXbSB7h"; // Thay bằng public_key của bạn
+
+      const templateParams = {
+        to_email: email,
+        customer_name: customerName,
+        order_id: orderId,
+        order_total: totalAmount,
+        payment_status: paymentStatus,
+      };
+
+      // Sử dụng fetch API để gửi email
+      fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          service_id: serviceID,
+          template_id: templateID,
+          user_id: publicKey,
+          template_params: templateParams,
+        }),
+      })
+        .then((response) => {
+          if (response.ok) {
+            console.log("Email đã được gửi thành công!");
+            //alert("Email đã được gửi thành công!");
+          } else {
+            throw new Error("Gửi email thất bại.");
+          }
+        })
+        .catch((error) => {
+          console.error("Lỗi:", error);
+          alert("Không thể gửi email. Vui lòng kiểm tra lại.");
+        });
+}
