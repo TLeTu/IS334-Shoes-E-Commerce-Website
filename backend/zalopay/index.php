@@ -9,10 +9,12 @@ $config = [
 ];
 
 $directUrl = $_GET['url'];
+$amount = $_GET['amount'];
 
 $directUrl = 'http://' . $directUrl . '/orderPlaced.html';
 
 echo $directUrl;
+echo $amount;
 
 $embeddata = json_encode(['redirecturl' => $directUrl]); // Redirect URL
 $items = '[]'; // Merchant's data
@@ -24,7 +26,7 @@ $order = [
     "app_user" => "user123",
     "item" => $items,
     "embed_data" => $embeddata,
-    "amount" => 50000,
+    "amount" => $amount,
     "description" => "Payment for the order #$transID",
     "bank_code" => "",
     "callback_url" => $directUrl

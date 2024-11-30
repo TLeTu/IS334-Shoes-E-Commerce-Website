@@ -170,6 +170,11 @@ buttonTag.onclick = function () {
 
     let name = document.getElementById('nameInput').value;
     let email = document.getElementById('emailInput').value;
+    let totalAmount = document.getElementById('total').children[1].textContent;
+    //remove the $ sign from the total amount
+    totalAmount = totalAmount.replace('$', '');
+    //remove the space from the total amount
+    totalAmount = totalAmount.trim();
 
     //validate the name and email
     if (name === '' || email === '') {
@@ -187,7 +192,7 @@ buttonTag.onclick = function () {
     let order = {
         name: name,
         email: email,
-        totalAmount: document.getElementById('total').children[1].textContent,
+        totalAmount: totalAmount,
     };
 
     localStorage.setItem('order', JSON.stringify(order));
@@ -199,8 +204,9 @@ buttonTag.onclick = function () {
     directUrl = directUrl.replace('http://', '');
     console.log(directUrl);
 
-    //direct to http://localhost/zalopay and send the order details and directUrl with url
-    window.location.href = `http://localhost/zalopay/index.php?&url=${directUrl}`;
+    //direct to http://localhost/zalopay and send the order details and directUrl with url and total amound
+    window.location.href = `http://localhost/zalopay/index.php?&url=${directUrl}&amount=${order.totalAmount}`;
+
 
 
 
