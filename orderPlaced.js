@@ -15,22 +15,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
         }
     }
 });
-document.getElementById('nikeCategory').addEventListener('click', function () {
-    const query = "Nike"; // Get the input value
-    if (query) { // Check if the input is not empty
-        window.location.href = `search.html?query=${encodeURIComponent(query)}`;
-    } else {
-        alert('Please enter a search query!'); // Optional: Prompt user to enter something
-    }
-});
-document.getElementById('adidasCategory').addEventListener('click', function () {
-    const query = "Adidas"; // Get the input value
-    if (query) { // Check if the input is not empty
-        window.location.href = `search.html?query=${encodeURIComponent(query)}`;
-    } else {
-        alert('Please enter a search query!'); // Optional: Prompt user to enter something
-    }
-});
+
 // let httpRequest = new XMLHttpRequest(),
 // jsonArray,
 // method = "GET",

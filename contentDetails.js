@@ -18,22 +18,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
         }
     }
 });
-document.getElementById('nikeCategory').addEventListener('click', function () {
-    const query = "Nike"; // Get the input value
-    if (query) { // Check if the input is not empty
-        window.location.href = `search.html?query=${encodeURIComponent(query)}`;
-    } else {
-        alert('Please enter a search query!'); // Optional: Prompt user to enter something
-    }
-});
-document.getElementById('adidasCategory').addEventListener('click', function () {
-    const query = "Adidas"; // Get the input value
-    if (query) { // Check if the input is not empty
-        window.location.href = `search.html?query=${encodeURIComponent(query)}`;
-    } else {
-        alert('Please enter a search query!'); // Optional: Prompt user to enter something
-    }
-});
+
 // Update badge if the counter exists in cookies
 if (document.cookie.indexOf(',counter=') >= 0) {
     let counter = document.cookie.split(',')[1].split('=')[1];
@@ -61,25 +46,22 @@ function dynamicContentDetails(ob) {
     let h1 = document.createElement('h1');
     h1.appendChild(document.createTextNode(ob.name));
 
-    let h4 = document.createElement('h4');
-    h4.appendChild(document.createTextNode(ob.brand));
-
     let detailsDiv = document.createElement('div');
     detailsDiv.id = 'details';
 
     let h3DetailsDiv = document.createElement('h3');
-    h3DetailsDiv.appendChild(document.createTextNode(ob.price + "$"));
-
+    h3DetailsDiv.appendChild(document.createTextNode(parseFloat(ob.price).toLocaleString('vi-VN') + "đ"));
+    
     if (ob.discount && ob.discount !== "0%") {
         h3DetailsDiv.style.textDecoration = "line-through";
         let discountPercentage = parseFloat(ob.discount) / 100;
         let discountedPrice = ob.price - (ob.price * discountPercentage);
         let discountPrice = document.createElement("h2");
         discountPrice.style.color = "red";
-        let discountText = document.createTextNode(discountedPrice.toFixed(2) + "$ ( " + ob.discount + " OFF )");
+        let discountText = document.createTextNode(discountedPrice.toLocaleString('vi-VN') + "đ ( " + ob.discount + " OFF )");
         discountPrice.appendChild(discountText);
         detailsDiv.appendChild(discountPrice);
-      }
+    }
 
     let h3 = document.createElement('h3');
     h3.appendChild(document.createTextNode('Description'));
@@ -134,7 +116,6 @@ function dynamicContentDetails(ob) {
     mainContainer.appendChild(imageSectionDiv);
     mainContainer.appendChild(productDetailsDiv);
     productDetailsDiv.appendChild(h1);
-    productDetailsDiv.appendChild(h4);
     productDetailsDiv.appendChild(detailsDiv);
     detailsDiv.appendChild(h3DetailsDiv);
     detailsDiv.appendChild(h3);

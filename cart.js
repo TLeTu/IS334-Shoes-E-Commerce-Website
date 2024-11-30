@@ -22,22 +22,6 @@ document.getElementById('input').addEventListener('keydown', function(event) {
     }
 });
 
-document.getElementById('nikeCategory').addEventListener('click', function () {
-    const query = "Nike"; // Get the input value
-    if (query) { // Check if the input is not empty
-        window.location.href = `search.html?query=${encodeURIComponent(query)}`;
-    } else {
-        alert('Please enter a search query!'); // Optional: Prompt user to enter something
-    }
-});
-document.getElementById('adidasCategory').addEventListener('click', function () {
-    const query = "Adidas"; // Get the input value
-    if (query) { // Check if the input is not empty
-        window.location.href = `search.html?query=${encodeURIComponent(query)}`;
-    } else {
-        alert('Please enter a search query!'); // Optional: Prompt user to enter something
-    }
-});
 
 let cartContainer = document.getElementById('cartContainer');
 
@@ -59,10 +43,30 @@ function dynamicCartSection(ob, itemCounter) {
     boxh3.appendChild(h3Text);
     boxDiv.appendChild(boxh3);
 
-    let boxh4 = document.createElement('h4');
-    let h4Text = document.createTextNode(ob.price + " $");
+    let boxh4 = document.createElement("h4");
+    let h4Text = document.createTextNode((parseFloat(ob.price).toLocaleString('vi-VN')) + "đ");
     boxh4.appendChild(h4Text);
-    boxDiv.appendChild(boxh4);
+  
+    let priceContainer = document.createElement("div");
+    priceContainer.style.display = "flex";
+    priceContainer.style.alignItems = "center";
+    
+    priceContainer.appendChild(boxh4);
+    
+    if (ob.discount && ob.discount !== "0%") {
+        boxh4.style.textDecoration = "line-through";
+        boxh4.style.marginRight = "10px"; // Add some space between the prices
+      let discountPercentage = parseFloat(ob.discount) / 100;
+      let discountedPrice = ob.price - (ob.price * discountPercentage);
+      let discountPrice = document.createElement("h3");
+      discountPrice.style.color = "red";
+      let discountText = document.createTextNode(discountedPrice.toLocaleString('vi-VN') + "đ");
+      discountPrice.appendChild(discountText);
+      priceContainer.appendChild(discountPrice);
+    }
+
+    boxDiv.appendChild(priceContainer);
+    
 
     // Add delete button
     let deleteButton = document.createElement('button');
@@ -102,10 +106,11 @@ totalDiv.appendChild(totalh2);
 // TO UPDATE THE TOTAL AMOUNT
 function amountUpdate(amount) {
     let totalh4 = document.createElement('h4');
-    let totalh4Text = document.createTextNode(amount + " $");
+    let totalh4Text = document.createTextNode(amount.toLocaleString('vi-VN') + "đ");
     // make the text bigger and bold
     totalh4.style.fontSize = '30px';
     totalh4.style.fontWeight = 'bold';
+    totalh4.style.color = 'red';
 
     totalh4.appendChild(totalh4Text);
     totalDiv.appendChild(totalh4);
@@ -235,7 +240,12 @@ fetch('products.json')
             let product = products.find(p => p.id == id); // Find product in JSON
             if (product) {
                 let itemCounter = itemCountMap[id];
-                totalAmount += Number(product.price) * itemCounter; // Accumulate total price
+                let price = Number(product.price);
+                if (product.discount && product.discount !== "0%") {
+                    let discountPercentage = parseFloat(product.discount) / 100;
+                    price = price - (price * discountPercentage);
+                }
+                totalAmount += price * itemCounter; // Accumulate total price
                 dynamicCartSection(product, itemCounter); // Display product in cart
             }
         }
@@ -243,7 +253,6 @@ fetch('products.json')
         amountUpdate(totalAmount); // Update total amount
     })
     .catch(error => console.error('Error fetching products:', error));
-
 // Function to delete item from cart
 function deleteItem(itemId) {
     let itemIds = document.cookie.split(',')[0].split('=')[1].trim().split(" ");

@@ -1,72 +1,212 @@
 [
   {
-    "id": "101",
-    "name": "Running Shoes",
+    "id": "2001",
+    "name": "Air Force 1 '07",
     "brand": "Nike",
-    "price": "4999",
+    "price": "2929000",
     "discount": "50%",
-    "description": "High-quality running shoes for maximum comfort and performance.",
-    "preview": "/img/adidas1.jpg",
+    "description": "The radiance lives on in the Nike Air Force 1 '07, the basketball original that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png",
     "photos": [
-      "https://example.com/images/product1_1.jpg",
-      "https://example.com/images/product1_2.jpg",
-      "https://example.com/images/product1_3.jpg"
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a0a300da-2e16-4483-ba64-9815cf0598ac/AIR+FORCE+1+%2707.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/82aa97ed-98bf-4b6f-9d0b-31a9f907077b/AIR+FORCE+1+%2707.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/120a31b0-efa7-41c7-9a84-87b1e56ab9c3/AIR+FORCE+1+%2707.png"
     ]
   },
   {
-    "id": "102",
-    "name": "Basketball Shoes",
-    "brand": "Adidas",
-    "price": "5999",
+    "id": "2002",
+    "name": "Pegasus 41 PRM",
+    "brand": "Nike",
+    "price": "4109000",
+    "discount": "25%",
+    "description": "Responsive cushioning in the winterized Pegasus provides an energised ride for everyday road running, day or night. Experience lighter-weight energy return with dual Air Zoom units and a ReactX foam midsole. Plus, reflective design paint on the upper lights up your route.",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7dc517a9-853d-4d13-8db4-dcd62c670654/AIR+ZOOM+PEGASUS+41+PRM.png",
+    "photos": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4fcb9bfe-6543-45ce-94cc-393b20b407bf/AIR+ZOOM+PEGASUS+41+PRM.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c8eb2975-7c44-4c70-8436-6e8f5cc43a94/AIR+ZOOM+PEGASUS+41+PRM.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/47067ee9-d662-4aab-86b4-6430318ef193/AIR+ZOOM+PEGASUS+41+PRM.png"
+    ]
+  },
+  {
+    "id": "2003",
+    "name": "C1TY 'Concrete'",
+    "brand": "Nike",
+    "price": "2929000",
+    "discount": "30%",
+    "description": "Nike C1TY is engineered to overcome anything the city throws your way. A mesh upper keeps the fit breathable, while the reinforced sides and toe box help protect your feet from the elements. This edition pulls colour inspiration from concrete—giving street style a whole new meaning.",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ce1f8589-87b7-4030-83db-38544e1ac7a5/NIKE+C1TY.png",
+    "photos": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/57645ab9-5740-4217-81d2-6d86e21321e8/NIKE+C1TY.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8e40e77c-fbe6-4710-a8b6-4f418886bf35/NIKE+C1TY.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f4e93d9a-d9c0-4435-b1b4-9f6a42fe6a5a/NIKE+C1TY.png"
+    ]
+  },
+  {
+    "id": "2004",
+    "name": "Sabrina 2 'Mirrored' EP",
+    "brand": "Nike",
+    "price": "3829000",
+    "discount": "40%",
+    "description": "Sabrina Ionescu's success is no secret. Her game is based on living in the gym, getting in rep after rep to perfect her craft. The Sabrina 2 sets you up to do more, so you're ready to go when it's game time. Our newest Cushlon foam helps keep you fresh, Air Zoom cushioning adds the pop and sticky traction helps you create that next-level distance. Sabrina's handed you the tools. Time to go to work. With its extra-durable rubber outsole, this version gives you traction for outdoor courts.",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a02d81ed-d203-41f6-87bf-f17df9eb3f71/SABRINA+2+EP.png",
+    "photos": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3648c327-80a8-4f4c-aebd-ca3cf58dfb6f/SABRINA+2+EP.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d5d39f3b-c70f-45ee-806f-45d04aaa70b3/SABRINA+2+EP.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d5b50a0d-c48e-42ad-858f-eef86cab1251/SABRINA+2+EP.png"
+    ]
+  },
+  {
+    "id": "2005",
+    "name": "Zoom Vomero 5",
+    "brand": "Nike",
+    "price": "4699000",
+    "discount": "10%",
+    "description": "Carve a new lane for yourself in the Zoom Vomero 5—your go-to for complexity, depth and easy styling. The richly layered design includes textiles, synthetic leather and plastic accents that come together to make one of the coolest sneakers of the season.",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0295a46e-7398-4b46-b502-f2ea3a79fc66/W+NIKE+ZOOM+VOMERO+5.png",
+    "photos": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/84e3fd9a-6084-429f-98cf-402d429e26ba/W+NIKE+ZOOM+VOMERO+5.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ba844a28-b477-45be-958e-4d880c210218/W+NIKE+ZOOM+VOMERO+5.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6a3da961-ed55-4a61-9bec-9dad72b4a453/W+NIKE+ZOOM+VOMERO+5.png"
+    ]
+  },
+  {
+    "id": "2006",
+    "name": "Zoom Vomero 5",
+    "brand": "Nike",
+    "price": "4999000",
     "discount": "50%",
-    "description": "Durable basketball shoes designed for court dominance.",
-    "preview": "https://example.com/images/product2.jpg",
+    "description": "Carve out a new lane for yourself in the Zoom Vomero 5. A richly layered design pairs airy textiles with synthetic leather and plastic accents to create a complex upper that's easy to style. And check out the insole, which celebrates iconic running coach and Nike co-founder Bill Bowerman.",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bf7dee49-3c31-42ab-8f49-fd394d99539f/NIKE+ZOOM+VOMERO+5.png",
     "photos": [
-      "https://example.com/images/product2_1.jpg",
-      "https://example.com/images/product2_2.jpg",
-      "https://example.com/images/product2_3.jpg"
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9ab2dc2c-cd50-4590-b71a-ce7d40577069/NIKE+ZOOM+VOMERO+5.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1b056de3-1095-4bc8-8fc7-0d9661b1ebd8/NIKE+ZOOM+VOMERO+5.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7a4292da-4098-445e-954a-42a5ace2730a/NIKE+ZOOM+VOMERO+5.png"
     ]
   },
   {
-    "id": "103",
-    "name": "Running Shoes1",
+    "id": "2007",
+    "name": "Dunk Low",
     "brand": "Nike",
-    "price": "4999",
-    "discount": "0%",
-    "description": "High-quality running shoes for maximum comfort and performance.",
-    "preview": "/img/adidas1.jpg",
+    "price": "2929000",
+    "discount": "25%",
+    "description": "Recognising the Dunk's roots as the top-ranking university-team sneaker, the Be True To Your School Pack looks to the original ad campaign for inspiration. Colours represent top-flight universities, while crisp leather has the perfect amount of sheen to make 'em a hands-down win. So lace up and show off that varsity spirit. Are you game?",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a447e0eb-b47c-464b-91df-5387f958582d/W+NIKE+DUNK+LOW.png",
     "photos": [
-      "https://example.com/images/product1_1.jpg",
-      "https://example.com/images/product1_2.jpg",
-      "https://example.com/images/product1_3.jpg"
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a0b7086d-28ed-4eb3-9a90-b8089b7e8063/W+NIKE+DUNK+LOW.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9ada8b1b-1413-46e8-9e85-cc8de79057e9/W+NIKE+DUNK+LOW.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f3c16707-4582-4a8a-a638-0396fa21c196/W+NIKE+DUNK+LOW.png"
     ]
   },
   {
-    "id": "104",
-    "name": "Running Shoes2",
+    "id": "2008",
+    "name": "Dunk Low Retro",
     "brand": "Nike",
-    "price": "4999",
-    "discount": "0%",
-    "description": "High-quality running shoes for maximum comfort and performance.",
-    "preview": "https://example.com/images/product1.jpg",
+    "price": "2929000",
+    "discount": "25%",
+    "description": "Recognising the Dunk's roots as the top-ranking university-team sneaker, the Be True To Your School Pack looks to the original ad campaign for inspiration. Colours represent top-flight universities, while crisp leather has the perfect amount of sheen to make 'em a hands-down win. So lace up and show off that varsity spirit. Are you game?",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ff6bde9-caad-444e-bd21-ee49b126fd85/NIKE+DUNK+LOW+RETRO.png",
     "photos": [
-      "https://example.com/images/product1_1.jpg",
-      "https://example.com/images/product1_2.jpg",
-      "https://example.com/images/product1_3.jpg"
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a9321fcb-3729-4f6d-93af-58513269b676/NIKE+DUNK+LOW+RETRO.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e93e56fd-66ce-4280-b610-d1c9a4efc346/NIKE+DUNK+LOW+RETRO.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8d266244-07c7-41b4-8235-d1ddee484728/NIKE+DUNK+LOW+RETRO.png"
     ]
   },
   {
-    "id": "105",
-    "name": "Running Shoes3",
+    "id": "2009",
+    "name": "Dunk Low SE",
     "brand": "Nike",
-    "price": "4999",
-    "discount": "50%",
-    "description": "High-quality running shoes for maximum comfort and performance.",
-    "preview": "https://example.com/images/product1.jpg",
+    "price": "2929000",
+    "discount": "25%",
+    "description": "Recognising the Dunk's roots as the top-ranking university-team sneaker, the Be True To Your School Pack looks to the original ad campaign for inspiration. Colours represent top-flight universities, while crisp leather has the perfect amount of sheen to make 'em a hands-down win. So lace up and show off that varsity spirit. Are you game?",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/06bdcd0d-8d6a-4225-8f55-c6f1ca1f5c80/NIKE+DUNK+LOW+SE+%28GS%29.png",
     "photos": [
-      "https://example.com/images/product1_1.jpg",
-      "https://example.com/images/product1_2.jpg",
-      "https://example.com/images/product1_3.jpg"
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b4c8843e-31ac-4979-bb28-f2f6c84ef703/NIKE+DUNK+LOW+SE+%28GS%29.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/50f1be79-e3d6-47c7-83b2-e7a3ab01fed2/NIKE+DUNK+LOW+SE+%28GS%29.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b0ac05d9-1bcc-4f00-acee-70653f0fdd64/NIKE+DUNK+LOW+SE+%28GS%29.png"
+    ]
+  },
+  {
+    "id": "2010",
+    "name": "Dunk Low Next Nature",
+    "brand": "Nike",
+    "price": "2929000",
+    "discount": "25%",
+    "description": "Recognising the Dunk's roots as the top-ranking university-team sneaker, the Be True To Your School Pack looks to the original ad campaign for inspiration. Colours represent top-flight universities, while crisp leather has the perfect amount of sheen to make 'em a hands-down win. So lace up and show off that varsity spirit. Are you game?",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/55f3633a-8a97-4592-8418-ae94e9ae999d/W+NIKE+DUNK+LOW+NEXT+NATURE.png",
+    "photos": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2c318d09-e003-4b2b-ade9-8bd792faaa7c/W+NIKE+DUNK+LOW+NEXT+NATURE.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7c2f8a1d-7ecc-4c94-b3d5-54ffabac11b0/W+NIKE+DUNK+LOW+NEXT+NATURE.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4fb65d21-b899-4ba9-a48f-fae3adb586b9/W+NIKE+DUNK+LOW+NEXT+NATURE.png"
+    ]
+  },
+  {
+    "id": "2011",
+    "name": "Cortez Vintage Suede",
+    "brand": "Nike",
+    "price": "2929000",
+    "discount": "15%",
+    "description": "You spoke. We listened. Based on your feedback, we've revamped the original Cortez while maintaining the retro appeal you know and love. Now with a wider toe area and firmer side panels, you can comfortably wear them day in and day out. Plus, re-engineered materials help prevent warping or creasing. Cortez fans—this one's for you.",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9919a5c7-8cf4-4135-a7d5-706800cc3394/W+NIKE+CORTEZ+VNTG.png",
+    "photos": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e1aca291-e72c-42fb-a32a-cc53fb478fb1/W+NIKE+CORTEZ+VNTG.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ee38a077-39a9-4fd8-9d41-90b57bb22a57/W+NIKE+CORTEZ+VNTG.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/188af126-8f45-4cc4-ab53-af1277058fcc/W+NIKE+CORTEZ+VNTG.png"
+    ]
+  },
+  {
+    "id": "2012",
+    "name": "Cortez Vintage Leather",
+    "brand": "Nike",
+    "price": "2929000",
+    "discount": "15%",
+    "description": "You spoke. We listened. Based on your feedback, we've revamped the original Cortez while maintaining the retro appeal you know and love. Now with a wider toe area and firmer side panels, you can comfortably wear them day in and day out. Plus, re-engineered materials help prevent warping or creasing. Cortez fans—this one's for you.",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/236a53ed-106f-44bb-855d-05abab45f414/W+NIKE+CORTEZ.png",
+    "photos": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dd732d7c-0f8d-4821-9b33-273e9298a0da/W+NIKE+CORTEZ.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/da6a7cdb-bdb7-4d48-84dc-b20d1d8fe71d/W+NIKE+CORTEZ.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5fb839a9-761e-4730-9740-aefe9f8da98e/W+NIKE+CORTEZ.png"
+    ]
+  },
+  {
+    "id": "2013",
+    "name": "Air Jordan 1 Low",
+    "brand": "Nike",
+    "price": "3239000",
+    "discount": "30%",
+    "description": "Always in, always fresh. The Air Jordan 1 Low sets you up with a piece of Jordan history and heritage that's comfortable all day. Choose your colours, then step out in the iconic profile that's built with a high-end mix of materials and encapsulated Air in the heel.",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b587cf81-b49a-4200-9a7c-8daa033ed393/WMNS+AIR+JORDAN+1+LOW.png",
+    "photos": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/944a01b4-080c-47c0-b9f2-e32f139275d7/WMNS+AIR+JORDAN+1+LOW.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3e9d4ae3-55ac-4e2b-bc9b-918ac3d047c0/WMNS+AIR+JORDAN+1+LOW.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/64235401-31a6-4cc5-af9a-d57d3a0fde8a/WMNS+AIR+JORDAN+1+LOW.png"
+    ]
+  },
+  {
+    "id": "2014",
+    "name": "Air Jordan 1 Mid",
+    "brand": "Nike",
+    "price": "3239000",
+    "discount": "30%",
+    "description": "Always in, always fresh. The Air Jordan 1 Low sets you up with a piece of Jordan history and heritage that's comfortable all day. Choose your colours, then step out in the iconic profile that's built with a high-end mix of materials and encapsulated Air in the heel.",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7fcafee2-7416-44f2-a0bc-0f34d1f6c8a2/WMNS+AIR+JORDAN+1+MID.png",
+    "photos": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5efc2f4d-451e-4242-8ff4-7aba4e782cc6/WMNS+AIR+JORDAN+1+MID.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8b539514-45c9-419b-96c3-f22c024e2979/WMNS+AIR+JORDAN+1+MID.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/383a9ff9-c821-4a52-a6f4-8beea6654829/WMNS+AIR+JORDAN+1+MID.png"
+    ]
+  },
+  {
+    "id": "2014",
+    "name": "Air Jordan 1 SE",
+    "brand": "Nike",
+    "price": "3239000",
+    "discount": "30%",
+    "description": "Always in, always fresh. The Air Jordan 1 Low sets you up with a piece of Jordan history and heritage that's comfortable all day. Choose your colours, then step out in the iconic profile that's built with a high-end mix of materials and encapsulated Air in the heel.",
+    "preview": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e4b9c2f6-9a19-475b-8f4e-3c3e9494c2df/AIR+JORDAN+1+LOW+SE.png",
+    "photos": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/09b065bd-90aa-4c00-9fd6-4ed008ac3ee5/AIR+JORDAN+1+LOW+SE.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/315467cd-8670-402a-9787-c8fc842c8e94/AIR+JORDAN+1+LOW+SE.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1ee0ac6b-9584-46ed-974a-df65cf3f8764/AIR+JORDAN+1+LOW+SE.png"
     ]
   }
 ]

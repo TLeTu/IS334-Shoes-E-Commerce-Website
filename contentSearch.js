@@ -18,22 +18,7 @@ document.getElementById('input').addEventListener('keydown', function(event) {
       }
   }
 });
-document.getElementById('nikeCategory').addEventListener('click', function () {
-  const query = "Nike"; // Get the input value
-  if (query) { // Check if the input is not empty
-      window.location.href = `search.html?query=${encodeURIComponent(query)}`;
-  } else {
-      alert('Please enter a search query!'); // Optional: Prompt user to enter something
-  }
-});
-document.getElementById('adidasCategory').addEventListener('click', function () {
-  const query = "Adidas"; // Get the input value
-  if (query) { // Check if the input is not empty
-      window.location.href = `search.html?query=${encodeURIComponent(query)}`;
-  } else {
-      alert('Please enter a search query!'); // Optional: Prompt user to enter something
-  }
-});
+
 console.log(document.cookie);
 
 function dynamicClothingSection(ob) {
@@ -53,30 +38,32 @@ function dynamicClothingSection(ob) {
   let h3Text = document.createTextNode(ob.name);
   h3.appendChild(h3Text);
 
-  let h4 = document.createElement("h4");
-  let h4Text = document.createTextNode(ob.brand);
-  h4.appendChild(h4Text);
-
-  let h2 = document.createElement("h2");
-  let h2Text = document.createTextNode((ob.price) + "$");
+  let h2 = document.createElement("h3");
+  let h2Text = document.createTextNode((parseFloat(ob.price).toLocaleString('vi-VN')) + "đ");
   h2.appendChild(h2Text);
-
-  detailsDiv.appendChild(h3);
-  detailsDiv.appendChild(h4);
   
+  detailsDiv.appendChild(h3);
 
+  
+  let priceContainer = document.createElement("div");
+  priceContainer.style.display = "flex";
+  priceContainer.style.alignItems = "center";
+  
+  priceContainer.appendChild(h2);
+  
   if (ob.discount && ob.discount !== "0%") {
+    h2.style.textDecoration = "line-through";
+    h2.style.marginRight = "10px"; // Add some space between the prices
     let discountPercentage = parseFloat(ob.discount) / 100;
     let discountedPrice = ob.price - (ob.price * discountPercentage);
-    let discountPrice = document.createElement("h2");
+    let discountPrice = document.createElement("h3");
     discountPrice.style.color = "red";
-    let discountText = document.createTextNode(discountedPrice.toFixed(2) + "$");
+    let discountText = document.createTextNode(discountedPrice.toLocaleString('vi-VN') + "đ");
     discountPrice.appendChild(discountText);
-    detailsDiv.appendChild(discountPrice);
-  } else {
-    detailsDiv.appendChild(h2);
+    priceContainer.appendChild(discountPrice);
   }
-
+  
+  detailsDiv.appendChild(priceContainer);
   boxDiv.appendChild(boxLink);
   boxLink.appendChild(imgTag);
   boxLink.appendChild(detailsDiv);
