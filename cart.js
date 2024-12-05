@@ -127,16 +127,16 @@ function amountUpdate(amount) {
     nameInput.style.height = '30px'; // Increase height
     totalDiv.appendChild(nameInput);
 
-    // let addressInput = document.createElement('input');
-    // addressInput.type = 'text';
-    // addressInput.placeholder = 'Address';
-    // addressInput.id = 'addressInput';
-    // addressInput.style.display = 'block'; // Ensure input is on a new line
-    // addressInput.style.marginTop = '10px'; // Add some spacing
-    // addressInput.style.width = '100%'; // Make input cover the width of the box
-    // addressInput.style.borderRadius = '5px'; // Rounded corners
-    // addressInput.style.height = '30px'; // Increase height
-    // totalDiv.appendChild(addressInput);
+    let addressInput = document.createElement('input');
+    addressInput.type = 'text';
+    addressInput.placeholder = 'Address';
+    addressInput.id = 'addressInput';
+    addressInput.style.display = 'block'; // Ensure input is on a new line
+    addressInput.style.marginTop = '10px'; // Add some spacing
+    addressInput.style.width = '100%'; // Make input cover the width of the box
+    addressInput.style.borderRadius = '5px'; // Rounded corners
+    addressInput.style.height = '30px'; // Increase height
+    totalDiv.appendChild(addressInput);
 
     let emailInput = document.createElement('input');
     emailInput.type = 'email';
@@ -177,9 +177,11 @@ buttonTag.onclick = function () {
     let email = document.getElementById('emailInput').value;
     let totalAmount = document.getElementById('total').children[1].textContent;
     //remove the $ sign from the total amount
-    totalAmount = totalAmount.replace('$', '');
+    totalAmount = totalAmount.replace('đ', '');
     //remove the space from the total amount
     totalAmount = totalAmount.trim();
+    //remove dot from the total amount
+    totalAmount = totalAmount.replace(/\./g, '');
 
     //validate the name and email
     if (name === '' || email === '') {
